@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "root",
+    "password": "@Cai3564423W",
+    "database": "acl_privilege",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "@Cai3564423W",
+    "database": "acl_privilege",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

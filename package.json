@@ -10,7 +10,7 @@
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-privilege",
     "stop": "egg-scripts stop --title=egg-server-privilege",
-    "dev": "egg-bin dev",
+    "dev": "egg-bin dev --port 9200",
     "debug": "egg-bin debug",
     "test-local": "egg-bin test",
     "test": "npm run lint -- --fix && npm run test-local",
@@ -25,7 +25,9 @@
     "egg": "^2.6.1",
     "egg-scripts": "^2.6.0",
     "egg-sequelize": "^5.2.0",
-    "mysql2": "^2.0.0"
+    "egg-validate": "^2.0.2",
+    "mysql2": "^2.0.0",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",

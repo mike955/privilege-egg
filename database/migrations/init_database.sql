@@ -1,8 +1,11 @@
 DROP TABLE if exists `acl_privilege`.`pri_user`;
 CREATE TABLE acl_privilege.pri_user (
   `id` BIGINT(32) UNSIGNED NOT NULL AUTO_INCREMENT comment '主键id',
-  `user_id` CHAR(32) NOT NULL comment '用户id',
-  `user_uuid` CHAR(32) NOT NULL comment '用户uuid',
+  `user_id` BINARY(16) NOT NULL comment '用户id',
+  `user_uuid` CHAR(36) NOT NULL comment '用户uuid',
+  `username` VARCHAR(128) NOT NULL comment '用户名',
+  `password` BINARY(64) NOT NULL comment '密码',
+  `salt` BINARY(32) NOT NULL comment '盐',
   `create_time` DATETIME NOT NULL COMMENT '创建时间',
   `update_time` DATETIME NOT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`),

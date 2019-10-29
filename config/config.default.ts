@@ -14,10 +14,17 @@ export default (appInfo: EggAppInfo) => {
   config.sequelize = {
     dialect: "mysql",
     host: "127.0.0.1",
-    password: "",
+    password: "@Cai3564423",
     port: 3306,
-    database: "egg-sequelize-doc-default"
+    database: "acl_privilege"
   };
+
+  // crsf config
+  config.security = {
+    csrf: {
+      enable: false
+    }
+  }
 
   // add your special config in here
   const bizConfig = {
